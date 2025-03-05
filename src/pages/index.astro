@@ -1,0 +1,62 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Card from '@components/home/Card.astro';
+
+const solutions = [
+	{
+		title: 'Solution 1',
+		description: 'Short description of the solution',
+		image: 'https://picsum.photos/200/300',
+		link: '#',
+	},
+	{
+		title: 'Solution 2',
+		description: 'Short description of the solution',
+		image: 'https://picsum.photos/200/300',
+		link: '#',
+	},
+
+]
+---
+
+<Layout>
+	<main>
+		<section>
+			<div class="container">
+				<h1>Frontendmentor Solutions</h1>
+				<p>
+					Collection of solutions to Frontendmentor challenges.
+				</p>
+				<ul class="list-wrapper">
+					{solutions.map((solution) => (
+						<Card {...solution} />
+					))}
+				</ul>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	section {
+		padding: 2rem 0.5rem;
+	}
+
+	.container {
+		max-width: 60rem;
+		margin: 0 auto;
+
+		h1,p {
+			text-align: center;
+		}
+	}
+
+	.list-wrapper {
+		margin-top: 4rem;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
