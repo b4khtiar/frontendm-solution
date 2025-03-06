@@ -1,6 +1,7 @@
 ---
 const { title, description, image, link } = Astro.props
 ---
+
 <li class="list-item card">
     <div class="card-image-wrapper">
         <img class="card-image" src={image} alt="template">
@@ -14,6 +15,7 @@ const { title, description, image, link } = Astro.props
 
 <style>
 .card {
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +46,11 @@ const { title, description, image, link } = Astro.props
             margin-top: 0;
             margin-bottom: 0.5rem;
         }
+        a {
+            display: block;
+            margin-top: 1rem;
+            color: purple;
+        }
     }
 }
-
 </style>

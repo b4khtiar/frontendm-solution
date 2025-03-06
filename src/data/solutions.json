@@ -1,0 +1,22 @@
+{
+    "solutions": [
+        {
+            "title": "Solution 1",
+            "description": "Short description of the first solution",
+            "image": "https://picsum.photos/200/300",
+            "link": "#"
+        },
+        {
+            "title": "Solution 2",
+            "description": "Short description of the second solution",
+            "image": "https://picsum.photos/200/300",
+            "link": "#"
+        },
+        {
+            "title": "Solution 3",
+            "description": "Short description of the third solution",
+            "image": "https://picsum.photos/200/300",
+            "link": "#"
+        }
+    ]
+}
