@@ -1,0 +1,55 @@
+---
+import Template from "@components/Challenge-details.astro"
+---
+
+<Template title="Order Summary Component" skills="HTML, CSS">
+    <div slot="challenges">
+        <p>
+            Build an order summary card component and get it looking as close to the design as possible.
+        </p>
+        <p>
+            Your users should be able to:
+            <br>
+            See hover states for interactive elements
+        </p>
+    </div>
+                
+    <div slot="design">
+        <div class="design-gallery">
+            <div class="image-desktop">
+                <img src="https://res.cloudinary.com/dz209s6jk/image/upload/v1628162588/Challenges/ztpxtbfhkp1af0guaylg.jpg" alt="Desktop design">
+            </div>
+            <div class="image-mobile">
+                <img src="https://res.cloudinary.com/dz209s6jk/image/upload/v1628162637/Challenges/pjrjfg9xfetnh9gsl6oh.jpg" alt="Mobile design">
+            </div>
+        </div>
+    </div>         
+</Template>
+
+<style>
+    section {
+        padding: 2rem 0.5rem;
+    }
+
+    .container {
+		max-width: 64rem;
+		margin: 0 auto;
+
+		.title,.skills {
+			text-align: center;
+		}
+	}
+
+    .design-gallery {
+        display: flex;
+        gap: 8px;
+        margin-top: 2rem;
+
+        .image-desktop {
+            width: 75%;
+        }
+        .image-mobile {
+            flex: 1;
+        }
+    }
+</style>

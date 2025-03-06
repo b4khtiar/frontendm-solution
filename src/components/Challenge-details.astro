@@ -1,0 +1,76 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+const path = Astro.url.pathname;
+const { title, skills } = Astro.props
+---
+
+<Layout title="Order Summary Component">
+    <main>
+        <section>
+            <div class="container">
+                <h1 class="title">{title}</h1>
+                <p class="skills">Skills: {skills}</p>
+
+                <div class="challenge-wrapper">
+                    <div class="challenge-text">
+                        <h2>Challenges</h2>
+                        <slot name="challenges" />
+
+                        <a class="see-solution" href={path + "/solution"}>
+                            See solution
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Design</h2>
+                        <slot name="design" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style>
+    @import url(https://fonts.bunny.net/css?family=azeret-mono:400,400i,700,800);
+
+    main {
+        font-family: 'Azeret Mono', monospace;
+        background: #ebebeb;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    section {
+        padding: 2rem 0.5rem;
+    }
+
+    .container {
+		max-width: 64rem;
+		margin: 0 auto;
+
+		.title,.skills {
+			text-align: center;
+		}
+	}
+
+    .challenge-wrapper {
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;
+
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .see-solution {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        display: block;
+        width: fit-content;
+        background-color: purple;
+        color: white;
+        text-decoration: none;
+    }
+</style>

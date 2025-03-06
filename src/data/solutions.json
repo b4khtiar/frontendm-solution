@@ -1,10 +1,10 @@
 {
     "solutions": [
         {
-            "title": "Solution 1",
-            "description": "Short description of the first solution",
-            "image": "https://picsum.photos/200/300",
-            "link": "#"
+            "title": "Order Summary Component",
+            "description": "Build an order summary card component and get it looking as close to the design as possible.",
+            "image": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/gh4wbxnbnf9wqezb0b6y.jpg",
+            "link": "/order-summary-component"
         },
         {
             "title": "Solution 2",
